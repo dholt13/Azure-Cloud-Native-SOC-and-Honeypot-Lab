@@ -28,7 +28,7 @@ This phase focuses on establishing the underlying infrastructure within a dedica
 ![VM Architecture](https://github.com/user-attachments/assets/3a202c48-6d06-4e47-8b21-91697661ec79)
 
 ### 2. Configuring Log Analytics Workspace
-To gather raw telemetry data, a Log Analytics Workspace (LAW) is instantiated. Windows Event Viewer generates Security Log data (Event ID 4625 for failed login attempts) directly on the VM. In this step, the Azure VM is linked directly to the newly configured LAW, allowing a pipeline for log ingestion from the VM's OS straight into the Azure cloud analytics system.
+To gather raw telemetry data, a Log Analytics Workspace (LAW) is instantiated. In this step, the Azure VM is linked directly to the newly configured LAW, allowing a pipeline for log ingestion from the VM's OS straight into the Azure cloud analytics system.
 
 ![LAW Integration Placeholder](https://github.com/user-attachments/assets/cd9a32c1-2e20-417e-a497-bc7c28cd9079)
 
@@ -45,7 +45,7 @@ Below is the real-time threat intelligence map generated within Microsoft Sentin
 ### 5. Configuring Microsoft Sentinel Analytics, Automation Rules, and Incidents
 Following the implementation of the workbook visualization, custom Microsoft Sentinel Analytics and Automation Rules were created. To proactively flag malicious attackss, four specialized Scheduled Analytics Rules were configured within Microsoft Sentinel to monitor high-risk system actions and MITRE ATT&CK techniques.
 
-The active alert rule matrix consists of the following parameters, as shown in Screenshot 2026-07-05 at 11.02.20 AM.jpg:
+The active alert rule matrix consists of the following parameters, as shown below:
 
 - Failed Logon Incidents (Severity: Medium): Detects persistent, brute-force authentication traffic attempting initial access.
 
