@@ -17,7 +17,7 @@ This project simulates the implementation of a cloud-native Security Operations 
 2. [Configuring Log Analytics Workspace](#2-configuring-log-analytics-workspace)
 3. [Forwarding Logs and Integrating with Microsoft Sentinel](#3-forwarding-logs-and-integrating-with-microsoft-sentinel)
 4. [Building the Real-Time Attack Map Visualization](#5-building-the-real-time-attack-map-visualization)
-5. [Creating Microsoft Sentinel Incidents and Alerts](#5-building-the-real-time-attack-map-visualization)
+5. [Configuring Microsoft Sentinel Analytics, Automation Rules, and Incidents](#5-building-the-real-time-attack-map-visualization)
 6. [Lab Summary and Operational Insights](#6-lab-summary-and-operational-insights)
 
 ---
