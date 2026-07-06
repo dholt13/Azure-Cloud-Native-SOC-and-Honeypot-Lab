@@ -8,7 +8,7 @@ This project simulates the implementation of a cloud-native Security Operations 
 
 * **Microsoft Azure Subscription** (Cloud Ecosystem Architecture)
 * **Azure Virtual Networks & Network Security Groups** (Isolated Honeypot Environment)
-* **Azure Virtual Machines** (Windows Server Deployment)
+* **Azure Virtual Machines** (Windows Deployment)
 * **Log Analytics Workspace** (Centralized Kusto Query Language - KQL Repository)
 * **Microsoft Sentinel** (Security Information and Event Management - SIEM)
 
@@ -33,7 +33,7 @@ To gather raw telemetry data, a Log Analytics Workspace (LAW) is instantiated. I
 ![LAW Integration Placeholder](https://github.com/user-attachments/assets/cd9a32c1-2e20-417e-a497-bc7c28cd9079)
 
 ### 3. Forwarding Logs and Integrating with Microsoft Sentinel
-With raw security telemetry feeding into the workspace, a Microsoft Sentinel is then layered on top of the workspace to transition the setup into a functional SIEM platform.
+With raw telemetry data feeding into the workspace, a Microsoft Sentinel is then layered on top of the workspace to transition the setup into a functional SIEM platform.
 
 ![Sentinel Deployment Placeholder](https://github.com/user-attachments/assets/ed573467-3555-4d7f-a8ec-17c4a0b0317a)
 
@@ -43,9 +43,9 @@ Below is the real-time threat intelligence map generated within Microsoft Sentin
 ![Attack Map Visualization](https://github.com/user-attachments/assets/acec0189-5849-4186-a3d0-c18feed2679a)
 
 ### 5. Configuring Microsoft Sentinel Analytics, Automation Rules, and Incidents
-Following the implementation of the workbook visualization, custom Microsoft Sentinel Analytics and Automation Rules were created. To proactively flag malicious attackss, four specialized Scheduled Analytics Rules were configured within Microsoft Sentinel to monitor high-risk system actions and MITRE ATT&CK techniques.
+Following the implementation of the real-time attack visualization, custom Microsoft Sentinel Analytics and Automation Rules were created. To proactively flag malicious attacks, four specialized Scheduled Analytics Rules were configured within Microsoft Sentinel to monitor high-risk system actions techniques.
 
-The active alert rule matrix consists of the following parameters, as shown below:
+The active alert rules consists of the following parameters, as shown below:
 
 - Failed Logon Incidents (Severity: Medium): Detects persistent, brute-force authentication traffic attempting initial access.
 
