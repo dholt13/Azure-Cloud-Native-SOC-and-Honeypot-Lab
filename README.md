@@ -1,4 +1,4 @@
-# Azure Cloud-Native SOC and Honeypot Lab
+# Azure Cloud-Native SOC and Honeypot Project
 
 This project simulates the implementation of a cloud-native Security Operations Center (SOC) using Microsoft Sentinel paired with an intentional Virtual Machine Honeypot deployed in Microsoft Azure. 
 
